@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    height: 135vh;
+    width: 100%;
+    background-color:  #dce3ee80;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+}
+
+#nav h1{
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(19, 1, 1);
+}
+
+.common-btn{
+    height: 45px;
+    width: 95px;
+    background: #1c19e6;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.common-btn:hover{
+    background-color: #4b16a7;
+}
+
+.common-btn:active{
+    transform: scale(0.9);
+}
+.Iphone-infor{
+    height: 240px;
+    width: 100%;
+    color: rgb(31, 5, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* padding-inline: 300px; */
+    /* padding-bottom: 40px; */
+}
+
+.Iphone-infor h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.Iphone-infor p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.phones-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15vw;
+    align-items: end;
+}
+.phones-div #phone1,#phone3{
+    height: 500px;
+}
+.phones-div #phone2{
+    height: 700px;
+}
+
+.search-div{
+    margin-top: 40px;
+    height: 150px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div h1{
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e45a0;
+}
+
+.search-div .search-inner-div{
+    height: 45px;
+    width: 500px;
+    margin-top: 15px;
+    display: flex;
+     justify-content: space-evenly; 
+    
+}
+
+  input{
+    height: 45px;
+    margin-top: 15px;
+
+}
+
+.search-div .search-inner-div input{
+    width: 390px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    color: white;
+    font-size: 25px;
+  
+}
+
+/* .search-div .search-inner-div input:focus{
+    outline: 1px solid gray;
+} */
+
+.search-div .search-inner-div input::placeholder{
+    font-size: 20px;
+}
+
+.phones-container{
+    height: auto;
+    background-color: #edf0f542;
+    padding-block: 50px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-inline: 50px;
+}
+.phones-container .phone-div{
+    height: 450px;
+    width: 430px;
+    color: #0c1425;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgb(121, 115, 115);
+    padding: 20px;
+    text-align: center;
+   
+}
+
+ .phones-container .phone-div p ,button{
+    margin-top: 15px;
+} 
+
+.phones-container .phone-div #phone-name{
+    font-size: 30px;
+}
+#show-details-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#footer{
+    height: 40vh;
+    white-space: 100%;
+    background-color: #edf0f3;
+    padding-top: 70px;
+    color: black;
+}
+.footer-div{
+    height: 280px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.footer-div p{
+    color: rgb(20, 3, 3);
+    font-size: 20px;
+}
+.footer-div .icons-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-div .icons-div i{
+    font-size: 30px;
+}
+
+@media only screen and(max-width:1024px) {
+
+    .phones-container{
+        min-height: 30px;
+        height: auto;
+     
+    }       
+    
+}
+
+@media only screen and (max-width:1024px) {
+    img {
+      width: 42%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 424px) {
+    .search-div {
+      width: 40%;
+      height: auto;
+      text-align: center;
+    }
+}
+
+
+
